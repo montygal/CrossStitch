@@ -1,0 +1,31 @@
+###
+
+GET http://localhost:8080/cross-stitch
+
+
+### Get contact by id 
+GET http://localhost:8080/cross-stitch/68d814ba00e1be13347447c0
+
+### Create contact 
+POST http://localhost:8080/cross-stitch HTTP/1.1 
+content-type: application/json
+
+{
+"theme":"Scenic", "color":"Warm", "Skill":"Intermediate", "Style":"counted", 
+"Size":"24 x 24"
+}
+
+
+### PUT contact 
+PUT http://localhost:8080/cross-stitch/68d814ba00e1be13347447c0 HTTP/1.1 
+content-type: application/json
+
+{
+"theme":"Ocean", "color":"Cold", "Skill":"Beginner", "Style":"Stamped", 
+"Size":"8 x 8"
+}
+
+
+### DELETE contact 
+DELETE http://localhost:8080/cross-stitch/68e19ddabf1c2dcecb24e245 HTTP/1.1    "Theme": "Scenic",
+
