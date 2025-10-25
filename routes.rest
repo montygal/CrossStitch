@@ -25,7 +25,6 @@ content-type: application/json
 "Size":"8 x 8"
 }
 
-
 ### DELETE contact 
-DELETE http://localhost:8080/cross-stitch/68f159578af02b6554ada163 HTTP/1.1    "Theme": "Scenic",
+DELETE http://localhost:8080/cross-stitch/68e19ddabf1c2dcecb24e245 HTTP/1.1
 

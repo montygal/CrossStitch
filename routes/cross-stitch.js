@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 
 const contactsController = require('../controllers/cross-stitch');
+const validation = require('../middleware/validate');
+
 
 router.get('/', contactsController.getAll);
 
