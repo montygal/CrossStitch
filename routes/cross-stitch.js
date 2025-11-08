@@ -3,9 +3,10 @@ const router = express.Router();
 
 const contactsController = require('../controllers/cross-stitch');
 const validation = require('../middleware/validate');
+const { auth, requiresAuth } = require('express-openid-connect');
 
 
-router.get('/', contactsController.getAll);
+router.get('/', requiresAuth(), contactsController.getAll);
 
 router.get('/:id', contactsController.getSingle);
 
